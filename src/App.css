@@ -76,8 +76,7 @@ nav ul li {
 .header-wrapper {
   position: relative;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url(background-header.jpg);
-  /* background: url(background-header.jpg) no-repeat; */
+    url(/src/images/background-header.jpg);
   background-size: cover;
   background-position: center;
   height: 90vh;
@@ -196,7 +195,7 @@ nav ul li {
 .experience {
   background: var(--primary-light-grey);
   position: absolute;
-  height: 1300px;
+  /* height: 1300px; */
   width: 100vw;
   padding: 0.7rem;
   margin-bottom: 25px;
