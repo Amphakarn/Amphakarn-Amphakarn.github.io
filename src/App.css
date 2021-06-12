@@ -4,7 +4,8 @@
   --primary-white: #fff;
   --primary-orange: #f9ab00;
   --primary-dark: rgba(255, 255, 255, 0);
-  --primary-darkGrey: rgb(80, 80, 80);
+  --primary-darkGrey: rgb(65, 65, 65);
+  --primary-lightGrey: #f4f4f4;
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
 }
@@ -183,3 +184,5 @@ nav ul li {
     width: 10rem;
   }
 }
+
+/************* EXPERIENCE *************/

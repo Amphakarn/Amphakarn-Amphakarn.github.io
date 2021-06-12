@@ -21,9 +21,10 @@ const AboutMe = () => {
           </p>
           <p>
             In my spare time when I’m not coding, I assist promoting Thai
-            culture to public. You can find me performing and demonstrating
-            traditional Thai dance and music on stage. I also assist teaching
-            Thai dance to kids and organizing events.
+            culture to the public. You can find me performing and demonstrating
+            traditional Thai dance and music on stage in many cities across
+            Canada. I also take a direct role in organizing events and teaching
+            Thai dance to kids.
           </p>
         </div>
       </div>
