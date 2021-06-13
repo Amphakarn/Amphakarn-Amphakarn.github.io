@@ -9,6 +9,7 @@
   --primary-dark: rgb(59, 59, 59);
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
+  --primary-black: #000000;
 }
 
 body,
@@ -194,10 +195,9 @@ nav ul li {
 /************* EXPERIENCE *************/
 .experience {
   background: var(--primary-light-grey);
-  position: absolute;
-  /* height: 1300px; */
+  /* position: absolute; */
   width: 100vw;
-  padding: 0.7rem;
+  padding: 3rem 0;
   margin-bottom: 25px;
 }
 
@@ -233,7 +233,6 @@ nav ul li {
 
 .timeline-block-right {
   float: right;
-  /* direction: ltr; */
 }
 
 .timeline-block-left {
@@ -306,4 +305,51 @@ nav ul li {
     direction: ltr;
     width: 100%;
   }
+}
+
+/************* PORTFOLIO *************/
+.portfolio-wrapper {
+  background: var(--primary-light-grey);
+  padding: 3rem 0;
+}
+
+.image-box-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio-image-box {
+  position: relative;
+  margin: 1rem;
+}
+
+.portfolio-image {
+  width: 18rem;
+  height: 200px;
+  object-fit: cover;
+  object-position: top left;
+  border: 1px solid var(--primary-orange);
+  padding: 0.5rem 0.5rem;
+}
+
+/************* OVERFLOW BOX *************/
+.overflow {
+  position: absolute;
+  opacity: 0;
+  background: var(--primary-black);
+  width: 18rem;
+  height: 200px;
+  top: 0;
+  border: 1px solid var(--primary-red);
+  cursor: pointer;
+}
+
+.portfolio-image-box:hover .overflow {
+  opacity: 30%;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
 }
