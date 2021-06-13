@@ -3,7 +3,9 @@ const Experience = () => {
   return (
     <div className="experience">
       <div className="d-flex justify-content-center my-5">
-        <h1>experience / education</h1>
+        <h1>
+          education <b>&</b> work experience
+        </h1>
       </div>
       <div className="container experience-wrapper">
         <div className="timeline-block timeline-block-right">
@@ -43,7 +45,7 @@ const Experience = () => {
         <div className="timeline-block timeline-block-right">
           <div className="marker"></div>
           <div className="timeline-content">
-            <h3>July 2021 - Nov. 2017</h3>
+            <h3>July 2010 - Nov. 2017</h3>
             <h4>gilmore printing services</h4>
             <h4>prepress technician</h4>
             <ul>
@@ -83,7 +85,8 @@ const Experience = () => {
             <p className="degree">
               M.Sc Information Technology <br />
               <em>
-                Canadian degree equivalency granted by World Education Services
+                Canadian degree equivalency granted by <br /> World Education
+                Services
               </em>{' '}
             </p>
           </div>
