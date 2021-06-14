@@ -66,7 +66,7 @@ nav ul li {
 }
 
 .navbar-nav > li > a.active,
-.navbar-nav > li > a.active:focus {
+.navbar-nav > li > a:focus {
   border-top: 0.1875rem solid var(--primary-orange);
 }
 
@@ -106,17 +106,17 @@ nav ul li {
 
 /************* TYPED TEXT *************/
 .typed-text {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--primary-white);
 }
 
 @media (max-width: 768px) {
   .main-info h1 {
-    font-size: 1.7rem !important;
+    font-size: 1.3rem !important;
   }
 
   .typed-text {
-    font-size: 1.3rem !important;
+    font-size: 1.1rem !important;
   }
 }
 
@@ -285,7 +285,7 @@ nav ul li {
 }
 
 .degree {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
 }
 
 /************* MEDIA *************/
@@ -311,13 +311,13 @@ nav ul li {
   }
 }
 
-/************* PORTFOLIO *************/
-.portfolio-wrapper {
+/************* PROJECTS *************/
+.projects-wrapper {
   background: var(--primary-light-grey);
   padding: 3rem 0;
 }
 
-.portfolio-wrapper h1 {
+.projects-wrapper h1 {
   color: var(--primary-orange);
 }
 
@@ -327,12 +327,12 @@ nav ul li {
   justify-content: center;
 }
 
-.portfolio-image-box {
+.projects-image-box {
   position: relative;
   margin: 1rem;
 }
 
-.portfolio-image {
+.projects-image {
   width: 18rem;
   height: 200px;
   object-fit: cover;
@@ -347,13 +347,13 @@ nav ul li {
   opacity: 0;
   background: var(--primary-black);
   width: 18rem;
-  height: 12.5rem;
+  height: 11.1rem;
   top: 0;
   border: 1px solid var(--primary-red);
   cursor: pointer;
 }
 
-.portfolio-image-box:hover .overflow {
+.projects-image-box:hover .overflow {
   opacity: 40%;
   transition: 0.3s ease-in-out;
   -webkit-transition: 0.3s ease-in-out;
@@ -362,16 +362,16 @@ nav ul li {
   -o-transition: 0.3s ease-in-out;
 }
 
-.portfolio-icon {
+.projects-icon {
   position: absolute;
   opacity: 0;
-  margin-left: -9rem;
-  margin-top: 6.25rem;
+  margin-left: -9.5rem;
+  margin-top: 5rem;
   color: var(--primary-orange);
   font-size: 1.6rem;
 }
 
-.portfolio-image-box:hover .portfolio-icon {
+.projects-image-box:hover .projects-icon {
   opacity: 100%;
   transition: 0.3s ease-in-out;
   -webkit-transition: 0.3s ease-in-out;
@@ -381,10 +381,14 @@ nav ul li {
   cursor: pointer;
 }
 
+.popupbox-wrapper {
+  margin-top: 7rem;
+}
+
 /************* OVERFLOW POPUP BOX *************/
 
-.portfolio-image-popupbox {
-  width: 35rem;
+.projects-image-popupbox {
+  width: 25rem;
   padding: 0.5rem 0.5rem;
 }
 
@@ -399,7 +403,7 @@ nav ul li {
 
 /************* MEDIA *************/
 @media (max-width: 768px) {
-  .portfolio-image-popupbox {
+  .projects-image-popupbox {
     width: 100%;
   }
 }
@@ -408,7 +412,7 @@ nav ul li {
   .popupbox-wrapper {
     height: 100%;
   }
-  .portfolio-image-popupbox {
+  .projects-image-popupbox {
     width: 50%;
   }
 }
@@ -417,7 +421,7 @@ nav ul li {
   .popupbox-wrapper {
     height: 90%;
   }
-  .portfolio-image-popupbox {
+  .projects-image-popupbox {
     width: 50%;
   }
 }

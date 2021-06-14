@@ -11,13 +11,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { PopupboxManager, PopupboxContainer } from 'react-popupbox';
 import 'react-popupbox/dist/react-popupbox.css';
 
-const Portfolio = () => {
+const Projects = () => {
   // MTracker
   const openPopupboxMTracker = () => {
     const content = (
       <>
         <img
-          className="portfolio-image-popupbox"
+          className="projects-image-popupbox"
           src={mTracker}
           alt="Maintenance Tracker Project"
         />
@@ -65,7 +65,7 @@ const Portfolio = () => {
     const content = (
       <>
         <img
-          className="portfolio-image-popupbox"
+          className="projects-image-popupbox"
           src={jungleRails}
           alt="Jungle Rails Project"
         />
@@ -106,7 +106,7 @@ const Portfolio = () => {
     const content = (
       <>
         <img
-          className="portfolio-image-popupbox"
+          className="projects-image-popupbox"
           src={scheduler}
           alt="Scheduler Project"
         />
@@ -148,7 +148,7 @@ const Portfolio = () => {
     const content = (
       <>
         <img
-          className="portfolio-image-popupbox"
+          className="projects-image-popupbox"
           src={tweeter}
           alt="Tweeter Project"
         />
@@ -183,68 +183,65 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="portfolio-wrapper">
+    <div id="projects" className="projects-wrapper">
       <div className="container">
         <h1 className="text-uppercase text-center py-5">projects</h1>
         <div className="image-box-wrapper">
-          <div className="portfolio-image-box" onClick={openPopupboxMTracker}>
+          <div className="projects-image-box" onClick={openPopupboxMTracker}>
             <img
-              className="portfolio-image"
+              className="projects-image"
               src={mTracker}
               alt="Maintenance Tracker Project"
             />
             <div className="overflow"></div>
             <FontAwesomeIcon
-              className="portfolio-icon"
+              className="projects-icon"
               icon={['fas', 'search-plus']}
             />
           </div>
           {/* - */}
-          <div
-            className="portfolio-image-box"
-            onClick={openPopupboxJungleRails}
-          >
+          <div className="projects-image-box" onClick={openPopupboxJungleRails}>
             <img
-              className="portfolio-image"
+              className="projects-image"
               src={jungleRails}
               alt="Jungle Rails Project"
             />
             <div className="overflow"></div>
             <FontAwesomeIcon
-              className="portfolio-icon"
+              className="projects-icon"
               icon={['fas', 'search-plus']}
             />
           </div>
           {/* - */}
-          <div className="portfolio-image-box" onClick={openPopupboxScheduler}>
+          <div className="projects-image-box" onClick={openPopupboxScheduler}>
             <img
-              className="portfolio-image"
+              className="projects-image"
               src={scheduler}
               alt="Scheduler Project"
             />
             <div className="overflow"></div>
             <FontAwesomeIcon
-              className="portfolio-icon"
+              className="projects-icon"
               icon={['fas', 'search-plus']}
             />
           </div>
           {/* - */}
-          <div className="portfolio-image-box" onClick={openPopupboxTweeter}>
+          <div className="projects-image-box" onClick={openPopupboxTweeter}>
             <img
-              className="portfolio-image"
+              className="projects-image"
               src={tweeter}
               alt="Tweeter Project"
             />
             <div className="overflow"></div>
             <FontAwesomeIcon
-              className="portfolio-icon"
+              className="projects-icon"
               icon={['fas', 'search-plus']}
             />
           </div>
           {/* - */}
-          {/* <div className="portfolio-image-box">
+          {/* <div className="projects-image-box">
             <img
-              className="portfolio-image"
+              className="projects-image"
               src={tinyApp}
               alt="Tiny App Project"
             />
@@ -260,4 +257,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Projects;
