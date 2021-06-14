@@ -6,7 +6,7 @@ import tweeter from '../images/tweeter.png';
 import tinyApp from '../images/tinyApp.png';
 // FONTAWESOME IMPORTS
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearchPlus } from '@fortawesome/free-solid-svg-icons';
+
 // REACT POPUPBOX
 import { PopupboxManager, PopupboxContainer } from 'react-popupbox';
 import 'react-popupbox/dist/react-popupbox.css';
@@ -194,7 +194,10 @@ const Portfolio = () => {
               alt="Maintenance Tracker Project"
             />
             <div className="overflow"></div>
-            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+            <FontAwesomeIcon
+              className="portfolio-icon"
+              icon={['fas', 'search-plus']}
+            />
           </div>
           {/* - */}
           <div
@@ -207,7 +210,10 @@ const Portfolio = () => {
               alt="Jungle Rails Project"
             />
             <div className="overflow"></div>
-            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+            <FontAwesomeIcon
+              className="portfolio-icon"
+              icon={['fas', 'search-plus']}
+            />
           </div>
           {/* - */}
           <div className="portfolio-image-box" onClick={openPopupboxScheduler}>
@@ -217,7 +223,10 @@ const Portfolio = () => {
               alt="Scheduler Project"
             />
             <div className="overflow"></div>
-            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+            <FontAwesomeIcon
+              className="portfolio-icon"
+              icon={['fas', 'search-plus']}
+            />
           </div>
           {/* - */}
           <div className="portfolio-image-box" onClick={openPopupboxTweeter}>
@@ -227,7 +236,10 @@ const Portfolio = () => {
               alt="Tweeter Project"
             />
             <div className="overflow"></div>
-            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+            <FontAwesomeIcon
+              className="portfolio-icon"
+              icon={['fas', 'search-plus']}
+            />
           </div>
           {/* - */}
           {/* <div className="portfolio-image-box">
