@@ -1,5 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Particles from 'react-particles-js';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
@@ -7,6 +8,14 @@ import AboutMe from './components/AboutMe';
 import Experience from './components/Experience';
 import Portfolio from './components/Portfolio';
 import Contacts from './components/Contacts';
+import Footer from './components/Footer';
+
+// FONTAWESOME IMPORTS
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+
+library.add(fab, fas);
 
 function App() {
   return (
@@ -38,6 +47,7 @@ function App() {
       <Experience />
       <Portfolio />
       <Contacts />
+      <Footer />
     </>
   );
 }

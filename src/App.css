@@ -13,10 +13,11 @@
   --primary-green: green;
 }
 
-body {
+body,
+html {
   font-family: 'Roboto Condensed', sans-serif !important;
   background-color: var(--primary-white);
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /************* NAVBAR *************/
@@ -80,7 +81,7 @@ nav ul li {
     url(/src/images/background-header.jpg);
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
   margin-bottom: 25px;
 }
 
@@ -128,9 +129,10 @@ nav ul li {
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   -o-border-radius: 0;
-  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  padding: 0.625rem 0.75rem 0.625rem 0.75rem;
   color: var(--primary-white);
   margin: 2rem;
+  text-decoration: none;
 }
 
 .btn-main-offer:hover {
@@ -142,6 +144,7 @@ nav ul li {
   -moz-transition: 0.4s ease-in-out;
   -ms-transition: 0.4s ease-in-out;
   -o-transition: 0.4s ease-in-out;
+  text-decoration: none;
 }
 
 /************* PARTICLES JS *************/
@@ -516,5 +519,54 @@ textarea.form-control {
 
   .contacts .container {
     padding: 0.75rem 1rem;
+  }
+}
+
+/************* FOOTER *************/
+.footer {
+  background: var(--primary-black);
+  color: var(--primary-dark-grey);
+  padding: 2.5rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-dark-grey);
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-orange);
+  cursor: pointer;
+}
+
+a .footer-nav {
+  margin-bottom: 1rem;
+}
+
+.footer .social-links {
+  font-size: 2rem;
+  padding: 0 1.5rem;
+}
+
+.footer .social-links a {
+  color: var(--primary-dark-grey);
+}
+
+.footer .social-links a:hover {
+  color: var(--primary-grey);
+}
+
+/************* MEDIA *************/
+@media (max-width: 768px) {
+  .footer .social-links {
+    font-size: 1.6rem;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  div .social-media {
+    margin-top: 1.5rem;
   }
 }
