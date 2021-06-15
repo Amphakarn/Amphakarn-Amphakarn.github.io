@@ -1,26 +1,40 @@
 import React from 'react';
 import Typed from 'react-typed';
+import { Link } from 'react-scroll';
+import SocialMedia from './SocialMedia';
 
 const Header = () => {
   return (
     <div id="home" className="header-wrapper">
       <div className="main-info">
-        <h1>web development and websites promotions</h1>
+        <h1>
+          Hi, I'm <b> Bee </b>Pisuthigomol
+        </h1>
         <Typed
           className="typed-text"
           strings={[
-            'Web Design',
-            'Web Development',
-            'Facebook Ads SMM',
-            'Google Ads',
+            'Full-Stack Web Developer',
+            'Creative Problem Solving',
+            'Analytical',
+            'Teamwork',
+            'Effective Communication',
+            'Customer Focus',
+            'Detailed Oriented',
           ]}
-          typeSpeed={40}
+          typeSpeed={60}
           backspeed={60}
           loop
         />
-        <a href="#" className="btn-main-offer">
+        <Link
+          smooth={true}
+          to="contacts"
+          offset={-110}
+          className="btn-main-offer"
+          href="#contacts"
+        >
           contact me
-        </a>
+        </Link>
+        <SocialMedia />
       </div>
     </div>
   );

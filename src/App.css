@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
+/* bg-dark (bootstrap5): #212529 */
+
 :root {
   --primary-white: #fff;
   --primary-light-grey: #f4f4f4;
@@ -27,11 +29,11 @@ nav {
 
 .logo {
   width: 5rem;
-  border-radius: 30%;
-  -webkit-border-radius: 30%;
-  -moz-border-radius: 30%;
-  -ms-border-radius: 30%;
-  -o-border-radius: 30%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 /************* MENU LINKS *************/
@@ -82,7 +84,7 @@ nav ul li {
 /************* HEADER *************/
 .header-wrapper {
   position: relative;
-  top: 110px;
+  top: 90px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(/src/images/background-header.jpg);
   background-size: cover;
@@ -107,7 +109,10 @@ nav ul li {
 
 .main-info h1 {
   color: var(--primary-orange);
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+  padding: 1rem;
 }
 
 /************* TYPED TEXT *************/
@@ -118,7 +123,7 @@ nav ul li {
 
 @media (max-width: 768px) {
   .main-info h1 {
-    font-size: 1.3rem !important;
+    font-size: 1.8rem !important;
   }
 
   .typed-text {
@@ -572,22 +577,23 @@ a .footer-nav {
   margin-bottom: 1rem;
 }
 
-.footer .social-links {
+/************* SOCIAL MEDIA *************/
+.social-links {
   font-size: 2rem;
   padding: 0 1.5rem;
 }
 
-.footer .social-links a {
-  color: var(--primary-dark-grey);
+.social-links a {
+  color: var(--primary-grey);
 }
 
-.footer .social-links a:hover {
-  color: var(--primary-grey);
+.social-links a:hover {
+  color: var(--primary-white);
 }
 
 /************* MEDIA *************/
 @media (max-width: 768px) {
-  .footer .social-links {
+  .social-links {
     font-size: 1.6rem;
     padding: 0 1rem;
   }

@@ -3,7 +3,7 @@ import mTracker from '../images/mTracker.png';
 import jungleRails from '../images/jungleRails.png';
 import scheduler from '../images/scheduler.png';
 import tweeter from '../images/tweeter.png';
-import tinyApp from '../images/tinyApp.png';
+
 // FONTAWESOME IMPORTS
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -238,15 +238,6 @@ const Projects = () => {
               icon={['fas', 'search-plus']}
             />
           </div>
-          {/* - */}
-          {/* <div className="projects-image-box">
-            <img
-              className="projects-image"
-              src={tinyApp}
-              alt="Tiny App Project"
-            />
-            <div className="overflow"></div>
-          </div> */}
         </div>
       </div>
       <PopupboxContainer {...popupboxConfigMTracker} />
