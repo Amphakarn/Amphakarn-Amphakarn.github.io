@@ -27,6 +27,11 @@ nav {
 
 .logo {
   width: 5rem;
+  border-radius: 30%;
+  -webkit-border-radius: 30%;
+  -moz-border-radius: 30%;
+  -ms-border-radius: 30%;
+  -o-border-radius: 30%;
 }
 
 /************* MENU LINKS *************/
@@ -208,6 +213,7 @@ nav ul li {
   background: var(--primary-light-grey);
   /* position: absolute; */
   width: 100vw;
+  height: 100vh;
   padding: 3rem 0;
   margin-bottom: 25px;
   text-align: center;
