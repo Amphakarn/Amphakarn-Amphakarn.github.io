@@ -26,14 +26,26 @@ const Navbar = () => {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ms-auto">
+          <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
-              <Link smooth={true} to="home" offset={-100} className="nav-link">
+              <Link
+                smooth={true}
+                to="home"
+                offset={-100}
+                className="nav-link"
+                href="#"
+              >
                 Home <span className="sr-only"></span>
               </Link>
             </li>
             <li className="nav-item">
-              <Link smooth={true} to="about" offset={-140} className="nav-link">
+              <Link
+                smooth={true}
+                to="about"
+                offset={-140}
+                className="nav-link"
+                href="#"
+              >
                 about me
               </Link>
             </li>
@@ -43,6 +55,7 @@ const Navbar = () => {
                 to="skills"
                 offset={-110}
                 className="nav-link"
+                href="#"
               >
                 skills
               </Link>
@@ -53,6 +66,7 @@ const Navbar = () => {
                 to="experience"
                 offset={-100}
                 className="nav-link"
+                href="#"
               >
                 education & work experience
               </Link>
@@ -63,6 +77,7 @@ const Navbar = () => {
                 to="projects"
                 offset={-80}
                 className="nav-link"
+                href="#"
               >
                 projects
               </Link>
@@ -73,6 +88,7 @@ const Navbar = () => {
                 to="contacts"
                 offset={-110}
                 className="nav-link"
+                href="#"
               >
                 contact me
               </Link>
