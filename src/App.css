@@ -25,6 +25,7 @@ html {
 /************* NAVBAR *************/
 nav {
   z-index: 2;
+  width: 100vw;
 }
 
 .logo {
@@ -34,6 +35,7 @@ nav {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  cursor: pointer;
 }
 
 /************* MENU LINKS *************/
@@ -87,8 +89,8 @@ nav ul li {
     url(/src/images/background-header.jpg);
   background-size: cover;
   background-position: center;
+  width: 100vw;
   height: 100vh;
-  margin-bottom: 25px;
 }
 
 .main-info {
@@ -214,22 +216,69 @@ nav ul li {
 /************* SKILLS *************/
 .skills {
   background: var(--primary-light-grey);
-  /* position: absolute; */
+  height: 100%;
   width: 100vw;
-  height: 100vh;
-  padding: 3rem 0;
-  margin-bottom: 25px;
-  text-align: center;
+}
+
+.skills h1 {
   color: var(--primary-orange);
+  text-transform: uppercase;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.skills-wrapper b {
+  color: var(--primary-dark);
+}
+
+.skills-wrapper {
+  color: var(--primary-dark-grey);
+}
+
+/* .skills-name {
+  color: var(--primary-dark);
+} */
+
+/************* PROGRESS BAR *************/
+.progress {
+  background-color: var(--primary-dark-grey);
+  border-radius: 20px !important;
+  -webkit-border-radius: 20px !important;
+  -moz-border-radius: 20px !important;
+  -ms-border-radius: 20px !important;
+  -o-border-radius: 20px !important;
+  position: relative;
+  margin-bottom: 25px !important;
+  height: 20px !important;
+  width: 500px;
+}
+
+.progress-done {
+  background: linear-gradient(to left, #f2709c, #ff9472);
+  box-shadow: 0 3px 3px -5px #f2709c, 0 2px 5px #f2709c;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  color: var(--primary-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
+  -webkit-transition: 1s ease 0.3s;
+  -moz-transition: 1s ease 0.3s;
+  -ms-transition: 1s ease 0.3s;
+  -o-transition: 1s ease 0.3s;
 }
 
 /************* EXPERIENCE *************/
 .experience {
-  /* background: var(--primary-light-grey); */
-  /* position: absolute; */
   width: 100vw;
-  padding: 3rem 0;
-  margin-bottom: 25px;
+  padding: 1rem 0;
 }
 
 .experience-wrapper {
@@ -239,8 +288,10 @@ nav ul li {
 }
 
 .experience h1 {
-  text-transform: uppercase;
   color: var(--primary-orange);
+  text-transform: uppercase;
+  margin-top: 25px;
+  margin-bottom: 50px;
 }
 
 .experience-wrapper::before {
@@ -341,11 +392,15 @@ nav ul li {
 /************* PROJECTS *************/
 .projects-wrapper {
   background: var(--primary-light-grey);
-  padding: 3rem 0;
+  /* padding: 3rem 0; */
+  width: 100vw;
 }
 
 .projects-wrapper h1 {
   color: var(--primary-orange);
+  text-transform: uppercase;
+  margin-top: 25px;
+  margin-bottom: 50px;
 }
 
 .image-box-wrapper {
@@ -366,6 +421,13 @@ nav ul li {
   object-position: top left;
   border: 1px solid var(--primary-orange);
   padding: 0.6rem 0.6rem;
+}
+
+/************* MEDIA *************/
+@media (max-width: 400px) {
+  .projects-image {
+    width: 14rem;
+  }
 }
 
 /************* OVERFLOW BOX *************/
@@ -456,13 +518,15 @@ nav ul li {
 /************* CONTACTS *************/
 .contacts {
   background: var(--primary-dark);
-  padding: 3rem 0;
+  padding: 3rem 1rem;
+  width: 100vw;
 }
 
 .contacts h1 {
   color: var(--primary-orange);
-  padding: 1.3rem 0;
   text-transform: uppercase;
+  margin-top: 25px;
+  margin-bottom: 50px;
 }
 
 /************* CONTACT INPUTS *************/
@@ -558,6 +622,7 @@ textarea.form-control {
   background: var(--primary-black);
   color: var(--primary-dark-grey);
   padding: 2.5rem;
+  width: 100vw;
 }
 
 .footer a {

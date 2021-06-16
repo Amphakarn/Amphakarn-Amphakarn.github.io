@@ -29,6 +29,7 @@ const Projects = () => {
         </p>
         <b>Github:</b>{' '}
         <a
+          href="https://github.com/Amphakarn/Maintenance-Tickets-Tracker"
           className="hyper-link"
           onClick={() =>
             window.open(
@@ -72,6 +73,7 @@ const Projects = () => {
         <p>A mini e-commerce application built with Ruby on Rails</p>
         <b>Github:</b>{' '}
         <a
+          href="https://github.com/Amphakarn/jungle-rails"
           className="hyper-link"
           onClick={() =>
             window.open('https://github.com/Amphakarn/jungle-rails')
@@ -116,6 +118,7 @@ const Projects = () => {
         </p>
         <b>Github:</b>{' '}
         <a
+          href="https://github.com/Amphakarn/scheduler"
           className="hyper-link"
           onClick={() => window.open('https://github.com/Amphakarn/scheduler')}
         >
@@ -155,6 +158,7 @@ const Projects = () => {
         <p>A simple, single-page Twitter clone using JQuery and Ajax</p>
         <b>Github:</b>{' '}
         <a
+          href="https://github.com/Amphakarn/tweeter"
           className="hyper-link"
           onClick={() => window.open('https://github.com/Amphakarn/tweeter')}
         >
@@ -184,8 +188,8 @@ const Projects = () => {
 
   return (
     <div id="projects" className="projects-wrapper">
-      <div className="container">
-        <h1 className="text-uppercase text-center py-5">projects</h1>
+      <div className="container py-5 px-3">
+        <h1 className="text-uppercase text-center ">projects</h1>
         <div className="image-box-wrapper">
           <div className="projects-image-box" onClick={openPopupboxMTracker}>
             <img

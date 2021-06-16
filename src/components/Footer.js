@@ -1,8 +1,5 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-
-// FONTAWESOME IMPORTS
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import SocialMedia from './SocialMedia';
 
 const Footer = () => {
@@ -10,9 +7,9 @@ const Footer = () => {
     <div className="footer">
       <div className="container">
         <div className="row">
-          <div className="col-lg-5 col-md-6 col-sm-6">
+          <div className="col-lg-6 col-md-6 col-sm-6">
             <div className="row">
-              <div className="col">
+              <div className="col ms-4">
                 <Link smooth={true} to="home" className="footer-nav">
                   Home
                 </Link>
@@ -67,13 +64,11 @@ const Footer = () => {
           </div>
 
           {/* SOCIAL MEDIA */}
-          <div className=" col-lg-7 col-md-6 col-sm-6 align-items-center">
+          <div className=" col-lg-6 col-md-6 col-sm-6 align-items-center">
             <SocialMedia />
 
-            <p className="pt-3 text-center">
+            <p className="pt-2 text-center">
               I'm Bee Pisuthigomol. Let's Talk. <br />
-              {/* Copyright&copy;
-              {new Date().getFullYear()} */}
             </p>
           </div>
         </div>

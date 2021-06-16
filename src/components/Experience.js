@@ -1,8 +1,8 @@
 import React from 'react';
 const Experience = () => {
   return (
-    <div id="experience" className="experience">
-      <div className="d-flex justify-content-center my-5">
+    <div id="experience" className="experience py-5 px-3">
+      <div className="d-flex justify-content-center">
         <h1>
           education <b>&</b> work experience
         </h1>

@@ -5,7 +5,7 @@ import SocialMedia from './SocialMedia';
 
 const Header = () => {
   return (
-    <div id="home" className="header-wrapper">
+    <div id="home" className="header-wrapper py-4 px-3">
       <div className="main-info">
         <h1>
           Hi, I'm <b> Bee </b>Pisuthigomol
@@ -20,6 +20,8 @@ const Header = () => {
             'Effective Communication',
             'Customer Focus',
             'Detailed Oriented',
+            'Hard-Working',
+            'Self-Motivated',
           ]}
           typeSpeed={60}
           backspeed={60}

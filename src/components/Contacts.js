@@ -41,7 +41,7 @@ const Contacts = () => {
   };
 
   return (
-    <div id="contacts" className="contacts">
+    <div id="contacts" className="contacts py-5 px-3">
       <div className="text-center">
         <h1>contact me</h1>
         {/* <p>I would love to hear from you, feel free to get in touch.</p> */}
@@ -49,7 +49,7 @@ const Contacts = () => {
       </div>
       <div className="container">
         <form onSubmit={handleSubmit(onSubmit)}>
-          <div className="row">
+          <div className="row gx-4">
             <div className="col-md-6 col-xs-12">
               {/* NAME INPUT */}
               <div className="text-center">
